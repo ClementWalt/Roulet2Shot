@@ -1,4 +1,20 @@
+
 header{
 	text-align:center;
+}
+body{
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	color:white;
+	font-family:retro;
+}
 
+@font-face {
+  font-family: retro;
+  src: url(../font/font.ttf);
+}
+
+button{
+	margin-left:410px;
 }
