@@ -4,10 +4,10 @@ header{
 }
 body{
 	background-image: url("../img/background.jpg");
-	background-repeat: no-repeat;
 	background-position: center;
 	color:white;
 	font-family:retro;
+	width:1000px;
 }
 
 @font-face {
@@ -16,5 +16,20 @@ body{
 }
 
 button{
-	margin-left:410px;
+	margin-left:430px;
+	margin-top:50px;
+}
+
+.custum-container{
+	width:1000px;
+	height:1000px;
+}
+
+#roulette{
+	margin-left:308px;
+	margin-top: 50px;
+	width:350px;
+	height:350px;
+	
+	
 }
