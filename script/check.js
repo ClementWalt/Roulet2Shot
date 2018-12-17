@@ -1,6 +1,7 @@
 
 function check(){
   var valeur=0;
+  
   if (document.getElementById('t1').checked) {
     valeur = document.getElementById('t1').value;
   }

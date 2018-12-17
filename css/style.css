@@ -8,6 +8,8 @@ body{
 	background-repeat: no-repeat;
 	color:white;
 	font-family:retro;
+	height:500px;
+	
 }
 
 @font-face {
@@ -18,27 +20,23 @@ body{
 #spin{
 	display:block;
 	margin:auto;
-	margin-top:50px;
+	margin-top:10px;
 }
 
-.custum-container{
-	width:1000px;
-	height:1000px;
-}
 
 #canvas{
 	display:block;
 	margin:auto;
-	margin-top: 50px;
-	width:500px;
-	height:500px;
+	margin-top: 10px;
+	width:290px;
+	height:290px;
 
 
 }
 .button {
   display: inline-block;
   padding: 15px 25px;
-  font-size: 24px;
+  font-size: 10px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -48,6 +46,8 @@ body{
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #293c42;
+  width:100px;
+  height:50px;
 }
 
 .button:hover {background-color: gray}
@@ -58,14 +58,15 @@ body{
   transform: translateY(4px);
 }
 
-h3{
+h6{
 	text-align:center;
-	margin-top:50px;
-
+	margin-top:10px;
+	font-size: 8px;
 }
 
 #choix{
 	text-align:center;
+	font-size:12px;
 
 
 }
