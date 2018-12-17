@@ -7,7 +7,6 @@ body{
 	background-position: center;
 	color:white;
 	font-family:retro;
-	width:1000px;
 }
 
 @font-face {
@@ -15,8 +14,9 @@ body{
   src: url(../font/font.ttf);
 }
 
-button{
-	margin-left:430px;
+#spin{
+	display:block;
+	margin:auto;
 	margin-top:50px;
 }
 
@@ -25,11 +25,12 @@ button{
 	height:1000px;
 }
 
-#roulette{
-	margin-left:308px;
+#canvas{
+	display:block;
+	margin:auto;
 	margin-top: 50px;
-	width:350px;
-	height:350px;
-	
-	
+	width:500px;
+	height:500px;
+
+
 }
