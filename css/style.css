@@ -5,6 +5,7 @@ header{
 body{
 	background-image: url("../img/background.jpg");
 	background-position: center;
+	background-repeat: no-repeat;
 	color:white;
 	font-family:retro;
 }
