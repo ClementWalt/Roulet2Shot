@@ -13,8 +13,7 @@ function check(){
   if (document.getElementById('t4').checked) {
     valeur = document.getElementById('t4').value;
   }
+  roue(valeur);
 
-  console.log(valeur);
 
-  return valeur;
 }
