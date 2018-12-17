@@ -1,4 +1,7 @@
-var options = ["Androxus", "Ash", "Barik", "Bomb King", "Buck", "Cassie", "Drogoz", "Evie", "Fernando", "Grohk", "Grover", "Inara", "Jenos", "Khan", "Kinessa", "Lex", "Lian", "Maeve", "Makoa", "Mal'Damba", "Moji", "Pip", "Ruckus", "Seris", "Sha Lin", "Skye", "Strix", "Talus", "Terminus", "Torvald", "Tyra", "Viktor", "Vivian", "Willo", "Ying","Zhin"];
+var valeur = 0;
+var tab = new Array(["0","1","2","3"],["0","1","2","3","4","5"],["0","1","2","3","4","5","6","7"],["0","1","2","3","4","5","6","7","8","9"]);
+
+var options = tab[check()];
 
 var startAngle = 0;
 var arc = Math.PI / (options.length / 2);
@@ -7,7 +10,7 @@ var spinTimeout = null;
 var spinArcStart = 10;
 var spinTime = 2;
 var spinTimeTotal = 2;
-
+var red = 0;
 var ctx;
 
 document.getElementById("spin").addEventListener("click", spin);
@@ -18,18 +21,18 @@ function byte2Hex(n) {
 }
 
 function RGB2Color(r,g,b) {
-	return '#' + byte2Hex(r) + byte2Hex(g) + byte2Hex(b);
+  return '#' + byte2Hex(r) + byte2Hex(g) + byte2Hex(b);
 }
 
-function getColor(item, maxitem) {
-  var phase = 0;
-  var center = 128;
-  var width = 127;
-  var frequency = Math.PI*2/maxitem;
-
-  red   = Math.sin(frequency*item+2+phase) * width + center;
-  green = Math.sin(frequency*item+0+phase) * width + center;
-  blue  = Math.sin(frequency*item+4+phase) * width + center;
+function getColor() {
+  green = 0;
+  blue  = 0;
+  if (red == 255 ){
+    red = 0;
+  }
+  else{
+    red  = 255;
+  }
 
   return RGB2Color(red,green,blue);
 }
@@ -61,11 +64,7 @@ function drawRouletteWheel() {
       ctx.fill();
 
       ctx.save();
-      ctx.shadowOffsetX = -1;
-      ctx.shadowOffsetY = -1;
-      ctx.shadowBlur    = 0;
-      ctx.shadowColor   = "rgb(220,220,220)";
-      ctx.fillStyle = "black";
+      ctx.fillStyle = "white";
       ctx.translate(250 + Math.cos(angle + arc / 2) * textRadius,
                     250 + Math.sin(angle + arc / 2) * textRadius);
       ctx.rotate(angle + arc / 2 + Math.PI / 2);
@@ -75,7 +74,7 @@ function drawRouletteWheel() {
     }
 
     //Arrow
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "white";
     ctx.beginPath();
     ctx.moveTo(250 - 4, 250 - (outsideRadius + 5));
     ctx.lineTo(250 + 4, 250 - (outsideRadius + 5));
