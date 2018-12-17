@@ -35,3 +35,31 @@ body{
 
 
 }
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #293c42;
+}
+
+.button:hover {background-color: gray}
+
+.button:active {
+  background-color: red;
+  box-shadow: 0 5px #293c42;
+  transform: translateY(4px);
+}
+
+h3{
+	text-align:center;
+	margin-top:50px;
+
+}

@@ -16,6 +16,26 @@
 <body>
 	<div class="custom-container w3-container">
 	<header><h1>Roulet2Shot</h1></header>
+  <div class="w3-row">
+    <label for="rd-html">
+  <input name="preflang" id="t1" type="radio" value="html" checked>
+  Poule Mouillé
+</label>
+<label for="rd-css">
+  <input name="preflang" id="t2" type="radio" value="css">
+  Etudiant
+</label>
+<label for="rd-php">
+  <input name="preflang" id="t3" type="radio" value="php">
+  Aventurier
+</label>
+<label for="rd-mysql">
+  <input name="preflang" id="t4" type="radio" value="mysql">
+  GOD
+</label>
+
+
+  </div>
 	<div class="w3-row">
 	<div>
 	<canvas id="canvas" width="500" height="500"></canvas>
@@ -23,10 +43,15 @@
 	</div>
 
 	<div class="w3-row">
-  <input  type="button" value="LANCEZ !!!" id='spin' />
+  <button id='spin' class="button">LANCER !!!</button>
+
 
   <script>
-  var options = ["0","1","2","3","4","5","6","7","8","9"];
+
+
+  var tab = new Array(["0","1","2","3"],["0","1","2","3","4","5"],["0","1","2","3","4","5","6","7"],["0","1","2","3","4","5","6","7","8","9"]);
+
+  var options = tab[3];
 
   var startAngle = 0;
   var arc = Math.PI / (options.length / 2);
@@ -153,7 +178,7 @@
   drawRouletteWheel();
 </script>
 	</div>
-
+  <h3>Règle : si tu tombes sur le 0 relance et distribue le nombre de gorgée affiché</h3>
 
 
 
