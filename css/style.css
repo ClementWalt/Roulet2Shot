@@ -53,11 +53,6 @@ body{
   transform: translateY(4px);
 }
 
-h6{
-	text-align:center;
-	margin-top:10px;
-	font-size: 8px;
-}
 
 #choix{
 	text-align:center;
@@ -70,5 +65,11 @@ h6{
 	margin: 0 auto;
 	width:205px;
 
+
+}
+
+p{
+
+  font-size:12px;
 
 }
