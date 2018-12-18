@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+
+  <title>Roulet2Shot</title>
+  <meta name="author" content="Krownixs">
+
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script/p5/p5.js"></script>
+  <script src="script/p5/addons/p5.dom.js"></script>
+</head>
+
+<body>
+	<div class="custom-container w3-container">
+	<header>
+	<button id="direct" onclick="window.location.href='index.html'">Jeu</button>
+	<h1>Roulet2Shot</h1>
+	</header>
+  <div class="w3-row" id="choix">
+    <label for="rd-html">
+  <input name="preflang" onclick="check()" id="t1" type="radio" value="0" checked>
+  Poule Mouillé
+</label>
+<label for="rd-css">
+  <input name="preflang" onclick="check()" id="t2" type="radio" value="1">
+  Etudiant
+</label>
+<label for="rd-php">
+  <input name="preflang" onclick="check()" id="t3" type="radio" value="2">
+  Aventurie
+</label>
+<label for="rd-mysql">
+  <input name="preflang" onclick="check()" id="t4" type="radio" value="3">
+  GOD
+</label>
+
+
+  </div>
+	<div class="w3-row">
+	<div>
+	<canvas id="canvas" width="500" height="500"></canvas>
+	</div>
+	</div>
+
+	<div class="centre-div">
+  <button id='spin' class="button">LANCER !!!</button>
+  <button id="change" class="button" onClick="window.location.reload()">Mode</button>
+  </div>
+  <script src="script/check.js"></script>
+  <script src="script/script.js"></script>
+  <h6>Règle : si tu tombes sur le 0 relance et distribue le nombre de gorgée affiché</h6>
+
+
+
+
+	</div>
+</body>
+</html>

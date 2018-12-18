@@ -1,0 +1,77 @@
+
+header{
+	text-align:center;
+}
+body{
+	background-image: url("../img/background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	color:white;
+	font-family:retro;
+	height:500px;
+
+}
+
+@font-face {
+  font-family: retro;
+  src: url(../font/font.ttf);
+}
+
+
+
+#canvas{
+	display:block;
+	margin:auto;
+	margin-top: 10px;
+	width:290px;
+	height:290px;
+
+
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #293c42;
+  width:100px;
+  height:50px;
+}
+
+.button:hover {background-color: gray}
+
+.button:active {
+  background-color: red;
+  box-shadow: 0 5px #293c42;
+  transform: translateY(4px);
+}
+
+h6{
+	text-align:center;
+	margin-top:10px;
+	font-size: 8px;
+}
+
+#choix{
+	text-align:center;
+	font-size:12px;
+
+
+}
+
+#spin{
+	margin:auto;
+	width:100px;
+	height:50px;
+	display:block;
+	
+
+
+}
