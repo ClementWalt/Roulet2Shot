@@ -106,6 +106,7 @@ function roue(valeur){
     spinTimeout = setTimeout(rotateWheel, 30);
   }
   var list='';
+
   function stopRotateWheel() {
     clearTimeout(spinTimeout);
     var degrees = startAngle * 180 / Math.PI + 90;
@@ -122,6 +123,7 @@ function roue(valeur){
     if (list.length>20) {
       list=list.substring(2,list.length);
     }
+    
     document.getElementById('lst').innerHTML = list;
 
 
