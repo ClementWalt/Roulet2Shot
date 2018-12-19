@@ -105,7 +105,7 @@ function roue(valeur){
     drawRouletteWheel();
     spinTimeout = setTimeout(rotateWheel, 30);
   }
-
+  var list='';
   function stopRotateWheel() {
     clearTimeout(spinTimeout);
     var degrees = startAngle * 180 / Math.PI + 90;
@@ -116,6 +116,15 @@ function roue(valeur){
     var text = options[index]
     ctx.fillText(text, 250 - ctx.measureText(text).width / 2, 250 + 10);
     ctx.restore();
+
+    list=list.concat(' ');
+    list=list.concat(text);
+    if (list.length>20) {
+      list=list.substring(2,list.length);
+    }
+    document.getElementById('lst').innerHTML = list;
+
+
   }
 
   function easeOut(t, b, c, d) {
@@ -125,6 +134,7 @@ function roue(valeur){
   }
 
   drawRouletteWheel();
+
 
 
 }
