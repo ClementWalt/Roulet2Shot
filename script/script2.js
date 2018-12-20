@@ -1,6 +1,6 @@
 
 
-  var options = ["Rejouer","Action","x2","Vérité","Passe","Boire"];
+  var options = ["Boire","Action","x2","Boire","Passe","Vérité"];
 
   var startAngle = 0;
   var arc = Math.PI / (options.length / 2);
